@@ -9,6 +9,7 @@
     <meta name="description" content="I build websites. View this site on your desktop. I write PHP, HTML, CSS, JavaScript & half a dozen other languages" />
     <meta name="author" content="Jason Nathan" />
 
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
 
@@ -17,7 +18,13 @@
 </head>
 
 <body class="impress-not-supported">
-
+<div class="fixed">
+<nav class="top-bar">
+  <ul class="title-area" style="margin:0 auto;text-align:center;width:100%">
+      <li class="name"><h1 style="color:white;margin:0 auto">Jason Nathan</h1></li>
+  </ul>
+</nav>
+</div>
 <div class="fallback-message">
     <p>Your browser <b>doesn't support the features required</b> to view this website properly, so you are presented with a simplified version of this presentation.</p>
     <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser on your desktop.</p>
@@ -26,16 +33,17 @@
 
 <div id="impress">
 
-    <div id="intro" class="step slide" data-x="-1000" data-y="-1500">
-        <q>Aren't you just <b>bored</b> with a plain generic website?</q>
+    <div id="intro" class="step slide" data-x="-1000" data-y="-1500" style="position:relative">
+        <img style="800px;height:600px;opacity:.1" src="/images/layoutwireframe.png">
+        <q style="position:absolute;top:25%;color:#000;text-shadow:1px 1px 10px #999;text-align:center"><strong>bored</strong> with basic website templates?</q>
     </div>
 
     <div id="exciting" class="step slide" data-x="0" data-y="-1500">
-        <q>Maybe you're just looking for something a little more <strong><em style="color:skyblue">exciting</em></strong> to showcase your product or service.</q>
+        <q>Maybe you're just looking for something a little more <strong><em style="color: cornflowerblue">exciting</em></strong> to showcase your product or service.</q>
     </div>
 
     <div id="attention" class="step slide" data-x="1000" data-y="-1500">
-        <q>Maybe you are just looking for someone who <strong>listens</strong> and <strong>pays attention</strong> to your <strong><em style="color:skyblue">needs</em></strong></q>
+        <q>Maybe you are just looking for someone who <strong>listens</strong> and <strong>pays attention</strong> to your <strong><em style="color: cornflowerblue">needs</em></strong></q>
     </div>
 
     <div id="title" class="step" data-x="0" data-y="0" data-scale="3">
@@ -69,12 +77,14 @@
 
     <div id="contact" class="step" data-x="6300" data-y="5000" data-rotate="20" data-scale="4">
         <q>Contact</q>
-        <p>Mobile:<a href="tel:+6590220964">+65 90220964</a></p>
-        <q>Email:<a href="mailto:jjnathanjr+jasonnathan@gmail.com">jjnathanjr@gmail.com</a></p>
-        <p>Skype:<a href="www.skype.com">jason.nathan</a></p>
-        <p>Facebook:<a href="www.twitter.com/jason_nathan">jason.nathan</a></p>
-        <p>Twitter:<a href="www.facebook.com/jason.nathan">jason_nathan</a></p>
-        <small style="font-size:.7em;color:#666">Thanks for watching :) Jason Nathan</small>
+        <p><i class="icon-phone" style="color: black"></i> <a href="tel:+6590220964">+65 90220964</a></p>
+        <q><i class="icon-envelope" style="color: purple"></i> <a href="mailto:jjnathanjr+jasonnathan@gmail.com">jjnathanjr@gmail.com</a></p>
+        <p><i class="icon-skype" style="color:#00adf2"></i> <a href="www.skype.com">jason.nathan</a></p>
+        <p><i class="icon-facebook" style="color:#3c599b"></i> <a href="www.twitter.com/jason_nathan">jason.nathan</a></p>
+        <p><i class="icon-twitter" style="color:#00abf0"></i> <a href="www.facebook.com/jason.nathan">jason_nathan</a></p>
+        <small style="font-size:.7em;color:#666">Thanks for watching :) Jason Nathan</small><br><br>
+        <small style="font-size:.3em;color:#666"><sub>*</sub>This website does not contain any flash. Powered by <a href="http://www.w3.org/html/logo/">
+<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-graphics-semantics.png" width="197" height="64" alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics" title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics"></a></small>
     </div>
 </div>
 <div class="hint">
@@ -87,6 +97,7 @@ if ("ontouchstart" in document.documentElement) {
 </script>
 
 <script src="js/impress.js"></script>
+<script src="js/script.js"></script>
 <script>impress().init();</script>
 
 </body>

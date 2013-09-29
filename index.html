@@ -83,25 +83,34 @@
         </div>
         <script>
             if ("ontouchstart" in document.documentElement) {
-                document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+            document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
             }
         </script>
 
         <script src="js/impress.js"></script>
         <script src="js/script.js"></script>
         <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-2433084-8']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
             Zepto(function($) {
-                return setTimeout(function() {
-                    return   $(".hint").animate({
-                        opacity: 1
-                    }, 2500, 'ease-out', function(){
-                        return $(this).animate({
-                        opacity: 0, translate3d: '0,10px,0'
-                    }, 2500, 'ease-out');
-                    })
-                }, 1) && impress().init();
+            return setTimeout(function() {
+            return   $(".hint").animate({
+            opacity: 1
+            }, 2500, 'ease-out', function(){
+            return $(this).animate({
+            opacity: 0, translate3d: '0,10px,0'
+            }, 2500, 'ease-out');
+            })
+            }, 1) && impress().init();
             });
-            </script>
+        </script>
 
     </body>
 </html>
